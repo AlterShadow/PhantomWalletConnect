@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Connect2Phantom from "../Connect2Phantom";
 
 const Header = () => {
   return (
@@ -50,9 +51,10 @@ const Header = () => {
           <span className="ml-[15px] w-[33px] h-[33px]">
             <img src="/assets/twitter.svg" alt="twitter" />
           </span>
-          <button className="bg-[#3887BF] w-[193px] h-[55px] ml-[21px] flex text-center justify-center items-center text-[20px] leading-normal font-normal text-white">
-            Connect Wallet
-          </button>
+          {/* <button className="bg-[#3887BF] w-[193px] h-[55px] ml-[21px] flex text-center justify-center items-center text-[20px] leading-normal font-normal text-white">
+            <Connect2Phantom />
+          </button> */}
+          <Connect2Phantom />
         </div>
       </div>
     </div>
