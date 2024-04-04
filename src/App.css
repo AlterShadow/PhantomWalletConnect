@@ -36,3 +36,28 @@
     transform: rotate(360deg);
   }
 }
+
+.stroke-text {
+  color: #fff;
+  -webkit-text-stroke-width: 5;
+  -webkit-text-stroke-color: #3887bf;
+  font-size: 108px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100px; /* 92.593% */
+  letter-spacing: 2.16px;
+}
+
+.story-board-1 {
+  width: 100%;
+  height: 850px;
+  background: url("../public/assets/StoryBackground1.png") lightgray -0.289px -89px /
+    99.831% 111.255% no-repeat;
+}
+
+.story-board-2 {
+  width: 100%;
+  height: 800px;
+  background: url("../public/assets/StoryBackground2.png") lightgray -0.289px -89px /
+    99.831% 111.255% no-repeat;
+}
