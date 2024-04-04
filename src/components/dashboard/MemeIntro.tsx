@@ -1,4 +1,7 @@
+import { CopyToClipboard } from "react-copy-to-clipboard";
+
 const MemeIntro = () => {
+  const tokenAddress = "fCuw5ppJ9aZYzjm8EsT2fHwxV1h5JwUfqXM44iX3Pzb";
   return (
     <div className="flex mx-auto pt-0 pr-0 pb-8 pl-7 items-center justify-center flex-row w-full">
       <div className="max-w-[832px]">
@@ -23,11 +26,13 @@ const MemeIntro = () => {
           <div className="relative w-[517px] h-[63px] bg-[#3887BF] mt-[9px]">
             <div className="absolute left-0 top-0 w-[512px] h-[55px] flex flex-row items-center pl-[19.6px] pr-[23.11px] border border-[#3887BF] gap-[42px] bg-[#42CFD9]">
               <span className="text-[20px] leading-[1em] font-normal text-white">
-                fCuw5ppJ9aZYzjm8EsT2fHwxV1h5JwUfqXM44iX3Pzb
+                {tokenAddress}
               </span>
-              <span className="w-[29px] h-[29px] hover:cursor-pointer">
-                <img src="/assets/clipboard.svg" alt="clipboard" />
-              </span>
+              <CopyToClipboard text={tokenAddress}>
+                <span className="w-[29px] h-[29px] hover:cursor-pointer">
+                  <img src="/assets/clipboard.svg" alt="clipboard" />
+                </span>
+              </CopyToClipboard>
             </div>
           </div>
           <span className="mt-[17px] w-[549px] text-[26px] text-primaryText font-normal tracking-[0.52px]">
